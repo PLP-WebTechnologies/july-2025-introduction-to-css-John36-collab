@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  h2 {
+     color: blue;
+  }
+</style>
+<body>
+    <header class="main-header">
+        <h1 style="color: green;">Welcome to CSS Basics</h1>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro-section">
+            <h2>Understanding the Box Model</h2>
+            <p style="color: red;">Every element in web design is a rectangular box. The CSS Box Model describes how these boxes are sized and spaced.</p>
+            <button class="btn">Learn More</button>
+        </section>
+
+        <section class="container">
+            <div class="container">
+                <h3>Margin Box</h3>
+                <p>Outermost layer, creates space between elements.</p>
+            </div>
+            <div class="box box-2">
+                <h3>Border Box</h3>
+                <p>Surrounds the padding elements and content.</p>
+            </div>
+            <div class="container">
+                <h3 style="color: blue; padding: 10px; border: 9px solid; background-color: yellow; margin: 20px;">Padding Box</h3>
+                <p>Space between the border and content.</p>
+            </div>
+            <div class="box box-4">
+                <h3>Content Box</h3>
+                <p>Where your actual content lives.</p>
+            </div>
+        </section>
+
+        <article class="card">
+            <h2>CSS Properties to Remember</h2>
+            <ul>
+                <li><strong>margin:</strong> Space outside the border</li>
+                <li><strong>padding:</strong> Space inside the border</li>
+                <li><strong>border:</strong> The edge around the element</li>
+                <li><strong>width/height:</strong> Dimensions of the content</li>
+            </ul>
+            <button class="btn btn-outline">Save Notes</button>
+        </article>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 CSS Basics. All rights reserved.</p>
+    </footer>
+</body>
+</html>
